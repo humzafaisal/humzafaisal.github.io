@@ -10,7 +10,7 @@ body{
 }
 
 .preloader{
-    background: #3a3153 url(imgs/preloader.gif) no-repeat center center;
+    background: #3a3153 url(ext/preloader.gif) no-repeat center center;
     background-size: 5%;
     height: 100vh;
     width: 100%;
