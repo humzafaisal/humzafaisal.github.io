@@ -1,43 +1,16 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'SF Mono', sans-serif;
     box-sizing: border-box;
+}
+
+body{
     background-color: #3a3153;
-    list-style: none;
 }
-social{
-    position:fixed;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    bottom: 0px;;
-    box-sizing: border-box;
-    left:0;
-    margin-bottom: 0px;
-    margin-left : 100px;
-    width: 2px;
-    height: 300px;
-    background-color: #5f43b2;
-    border-radius: 25px;
-}
-social li{
-    height: 50px;
-    position:relative;
-}
-social li a{
-    color: #5f43b2;
-}
-social li a i{
-    position: absolute;
-    left: -10px;
-    font-size: 30px;
-}
-a:hover{
-    color: #b1aebb;
-}
+
 .preloader{
-    background: #5f43b2 url(Preloader.gif) no-repeat center center;
+    background: #3a3153 url(imgs/preloader.gif) no-repeat center center;
     background-size: 5%;
     height: 100vh;
     width: 100%;
@@ -48,4 +21,71 @@ a:hover{
 .preloader--hidden{
     opacity: 0;
     visibility: hidden;
+}
+
+.container{
+    padding: 25px 2.5%;
+}
+nav {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#b1aebb;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.5s;
+}
+nav ul li a:hover{
+    color: #8777b1;
+}
+.home{
+    color: #8777b1;
+}
+.button{
+    padding: 10px 10px;
+    text-decoration: none;
+    border: #b1aebb 1px solid;
+    border-radius: 10px;
+    border-spacing: 2px;
+    color: #b1aebb;
+    transition: all 0.5s;
+}
+.button::after{
+    height: 0px;
+}
+.button:hover{
+    border: #8777b1 1px solid;
+}
+
+social{
+    position:fixed;
+    margin: 0;
+    text-decoration: none;
+    bottom: 0px;;
+    left:0;
+    margin-left : 2.5%;
+    height: 200px;
+    color: #3a3153;
+}
+social li{
+    height: 50px;
+    position:relative;
+}
+social li a{
+    color: #b1aebb;
+    transition: all .25s linear;
+    font-size: 30px;
+}
+social li a:hover{
+    color: #8777b1;
+    top: 1000px;
 }
