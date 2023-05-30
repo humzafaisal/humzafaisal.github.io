@@ -9,21 +9,30 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-mono">
         <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-        <link rel="shortcut icon" type="image/png" href="ext/favicon.png">
+        <link rel="icon" type="image/png" href="ext/favicon.png?">
     </head>
     <body>
+        <div class="postloader"></div>
         <div class="preloader"></div>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#" class="home"><b>&lt;home&gt;</b></a></li>
-                    <li><a href="#"><b>&lt;about&gt;</b></a></li>
-                    <li><a href="#"><b>&lt;projects&gt;</b></a></li>
-                    <li><a href="#"><b>&lt;contact&gt;</b></a></li>
-                    <li><a href="ext/Resume - 05-01-2023.pdf" class="button"><b>resume.pdf</b></a></li>
-                </ul>
-            </nav>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="home"><b>&lt;welcome&gt;</b></a></li>
+                        <li><a href="#"><b>&lt;about&gt;</b></a></li>
+                        <li><a href="#"><b>&lt;projects&gt;</b></a></li>
+                        <li><a href="#"><b>&lt;contact&gt;</b></a></li>
+                        <li><a href="/Users/humza/Documents/Portfolio/ext/Resume - 05-01-2023.pdf" class="button"><b>resume.pdf</b></a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Hi, my name is</p>
+                    <h1>Humza Faisal</h1>
+                    <h1>I am a</h1>
+                </div>
+            </div>
         </div>
+
         <social>
             <ul>
                 <li><a href="https://www.linkedin.com/in/humzafaisal/">
@@ -37,6 +46,9 @@
                 </a></li>
             </ul>
         </social>
+
+
+
     </body>
     <script src="https://unpkg.com/kursor"></script>
     <script src="https://kit.fontawesome.com/af07fa5300.js" crossorigin="anonymous"></script>
@@ -45,6 +57,10 @@
             setTimeout(function(){
                 document.querySelector(".preloader").classList.add("preloader--hidden");
             }, 500);
+            setTimeout(function(){
+                document.querySelector(".postloader").classList.add("postloader--hidden");
+            }, 2500);
+
         });
     </script>
     <script>
