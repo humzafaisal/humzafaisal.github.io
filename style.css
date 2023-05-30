@@ -8,7 +8,7 @@
     list-style: none;
 }
 body{
-    background-color: #3a3153;
+    background-color: #221d32;
 }
 .preloader{
     background: #3a3153 url(ext/preloader.gif) no-repeat center center;
@@ -36,6 +36,17 @@ body{
     opacity: 0;
     visibility: hidden;
 }
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 1em;
+}
+::-webkit-scrollbar-thumb{
+    background: #3a3153;
+    border-radius: 100vw;
+    border: 0.25em solid #8777b1;
+}
 
 /*-- ----------Header---------- --*/
 
@@ -47,8 +58,8 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.container{
-    padding: 25px 2.5%;
+.containera{
+    padding: 25px 2.5%; 
 }
 nav {
     display: flex;
@@ -113,6 +124,9 @@ nav ul li a:hover{
     color: #b1aebb;
     font-family: 'helvetica', sans-serif;
 }
+.header-text p{
+    margin-left: 4px;
+}
 .name{
     font-size: 90px;
     color: #8777b1;
@@ -121,6 +135,7 @@ nav ul li a:hover{
     box-sizing: content-box;
     height: 60px;
     display: flex;
+    margin-left: -3px;
 }
 .words{
     overflow: hidden;
@@ -161,10 +176,58 @@ nav ul li a:hover{
         transform: translateY(-400%);
     }
 }
-
+.enter{
+    height: 50px;
+    width: 25px;
+    border: 2px solid #b1aebb;
+    border-radius: 100vw;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transition: .5s;
+}
+.enter::after, .enter::before{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid #b1aebb;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: enter 1.5s ease-in-out infinite;
+    transition: .5s;
+}
+.enter::after{
+    top: 30%;
+    animation-delay: .5s;
+}
+.enter:hover, .enter:hover::after, .enter:hover::before{
+    border-color: #8777b1;
+}
+@keyframes enter {
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }    
+    60%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        top:90%;
+    }
+}
 /*-- ----------About---------- --*/
 
-/* code here */
+#about{
+    height: 100vh;
+    padding: 10%;
+}
 
 /*-- ----------Social---------- --*/
 
