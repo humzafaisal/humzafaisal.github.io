@@ -1,15 +1,15 @@
+/*-- ----------General---------- --*/
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'SF Mono', sans-serif;
+    
     box-sizing: border-box;
     list-style: none;
 }
-
 body{
     background-color: #3a3153;
 }
-
 .preloader{
     background: #3a3153 url(ext/preloader.gif) no-repeat center center;
     background-size: 5%;
@@ -37,12 +37,15 @@ body{
     visibility: hidden;
 }
 
+/*-- ----------Header---------- --*/
+
 #header{
     width: 100%;
     height: 100vh;
     background-image: url(ext/background.gif);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .container{
     padding: 25px 2.5%;
@@ -52,6 +55,7 @@ nav {
     align-items: right;
     justify-content: right;
     flex-wrap: wrap;
+    font-family: 'SF Mono', sans-serif;
 }
 nav ul li{
     display: inline-block;
@@ -79,26 +83,90 @@ nav ul li a:hover{
     border-spacing: 2px;
     color: #b1aebb;
     transition: all 0.5s;
+    overflow: hidden;
+    z-index: 1;
 }
-.button::after{
-    height: 0px;
+.button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #b1aebb;
+    z-index: -1;
+    overflow: hidden;
+    transition: .25s;
+    border-radius: 9px;
+}
+.button:hover::before{
+    width: 100%;
+    overflow: hidden;
 }
 .button:hover{
     border: #8777b1 1px solid;
 }
-
 .header-text{
     margin-top: 15%;
     margin-left: 20%;
-    font-size: 25px;
+    font-size: 30px;
+    color: #b1aebb;
+    font-family: 'helvetica', sans-serif;
 }
-.header-text h1{
+.name{
+    font-size: 90px;
+    color: #8777b1;
+}
+.scroll{
+    box-sizing: content-box;
+    height: 60px;
+    display: flex;
+}
+.words{
+    overflow: hidden;
+}
+.intro{
     font-size: 60px;
 }
+#words{
+    font-size: 60px;
+    display: block;
+    padding-left: 20px;
+    animation: rotating_words 6s infinite;
+    color: #8777b1
+}
+@keyframes rotating_words{
+    10%{
+        transform: translateY(-112%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-212%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-312%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
 
+/*-- ----------About---------- --*/
 
+/* code here */
 
-
+/*-- ----------Social---------- --*/
 
 social{
     position:fixed;

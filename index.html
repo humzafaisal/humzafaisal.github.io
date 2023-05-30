@@ -14,6 +14,9 @@
     <body>
         <div class="postloader"></div>
         <div class="preloader"></div>
+
+<!-- ----------Header---------- -->
+
         <div id="header">
             <div class="container">
                 <nav>
@@ -27,11 +30,38 @@
                 </nav>
                 <div class="header-text">
                     <p>Hi, my name is</p>
-                    <h1>Humza Faisal</h1>
-                    <h1>I am a</h1>
+                    <h1><span class="name">HUMZA FAISAL</span></h1>
+                    <div class="scroll">
+                        <p class="intro">I'm a </p>
+                        <div class="words">
+                            <span id="words">Web Developer</span>
+                            <span id="words">C++ Developer</span>
+                            <span id="words">Java Developer</span>
+                            <span id="words">Computer Scientist</span>
+                            <span id="words">Web Developer</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+
+<!-- ----------About---------- -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="ext/welc.gif">
+                    </div>
+                    <div class="about-col-1">
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- ----------Socials---------- -->
 
         <social>
             <ul>
@@ -46,10 +76,10 @@
                 </a></li>
             </ul>
         </social>
-
-
-
     </body>
+
+<!-- ----------JavaScript---------- -->
+
     <script src="https://unpkg.com/kursor"></script>
     <script src="https://kit.fontawesome.com/af07fa5300.js" crossorigin="anonymous"></script>
     <script>
@@ -59,14 +89,14 @@
             }, 500);
             setTimeout(function(){
                 document.querySelector(".postloader").classList.add("postloader--hidden");
-            }, 2500);
-
+            }, 2000);
         });
     </script>
     <script>
         new kursor({
-            type: 2,
+            type: 1,
             removeDefaultCursor: true,
+            color: '#ffffff'
         })
     </script>
 </html>
