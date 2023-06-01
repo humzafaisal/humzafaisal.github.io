@@ -39,14 +39,14 @@ html{
     scroll-behavior: smooth;
 }
 ::-webkit-scrollbar{
-    width: 1em;
+    width: 0.5em;
+    transition: all 2s;
 }
 ::-webkit-scrollbar-track{
-    color: #16161C;
+    color: transparent;
 }
 ::-webkit-scrollbar-thumb{
     background: #16161C;
-    border-radius: 100vw;
     border: 0.25em solid #f03739;
 }
 .navbar{
@@ -67,7 +67,7 @@ html{
     text-align: right;
 }
 .navbar ul li .dot{
-    color: #f03739;
+    color: #b1aebb;
     display: block;
     padding: 30px 10px;
 }
@@ -77,13 +77,18 @@ html{
     padding: 5%;
     margin-right: 10px;
     border-radius: 3px;
-    transform: translateX(30px);
-    opacity: 0;
-    transition: .2s ease-out;
-}
-.navbar ul li:hover .dot span{
     transform: translateX(0px);
     opacity: 1;
+    transition: .2s ease-out;
+}
+.navbar ul li .dot span{
+    transform: translateX(30px);
+    opacity: 0;
+}
+.navbar ul li:hover .dot span, .navbar ul li .dot.active span{
+    transform: translateX(0px);
+    opacity: 1;
+    color: #f03739;
 }
 .navbar ul li .dot::after, .navbar ul li .dot::before{
     content: '';
@@ -113,6 +118,7 @@ html{
 }
 .navbar ul li .dot.active::after, .navbar ul li:hover .dot::after{
     transform: translateY(-50%) scale(1);
+    color: #f03739;
 }
 
 /*-- ----------Header---------- --*/
