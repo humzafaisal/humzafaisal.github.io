@@ -181,11 +181,10 @@
 
     <script>
         window.addEventListener("load", ()  =>  {
+            window.scrollTo(0, 0);
             setTimeout(function(){
                 document.querySelector(".preloader").classList.add("preloader--hidden");
             }, 500);
-            window.scrollTo(500, 500);
-            window.scrollTo(0, 0);
             setTimeout(function(){
                 document.querySelector(".postloader").classList.add("postloader--hidden");
             }, 1000);
