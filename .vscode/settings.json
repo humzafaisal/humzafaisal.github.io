@@ -5,5 +5,20 @@
         "headd",
         "postloader",
         "welc"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#0078d7",
+        "statusBarItem.hoverBackground": "#0b93ff",
+        "statusBarItem.remoteBackground": "#0078d7",
+        "tab.activeBorder": "#0b93ff",
+        "activityBar.activeBackground": "#0b93ff",
+        "activityBar.background": "#0b93ff",
+        "activityBarBadge.background": "#ffbfe3",
+        "activityBarBadge.foreground": "#15202b",
+        "sash.hoverBorder": "#0b93ff",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.remoteForeground": "#e7e7e7"
+    }
 }
