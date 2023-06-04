@@ -4,8 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
+    font-family: 'SF Mono', sans-serif;
 }
 
 #spacer {
@@ -232,9 +232,8 @@ headd {
 .header-text {
     margin-top: 15%;
     margin-left: 20%;
-    font-size: 30px;
+    font-size: 20px;
     color: #b1aebb;
-    font-family: 'helvetica', sans-serif;
 }
 
 .header-text p {
@@ -242,13 +241,13 @@ headd {
 }
 
 .name {
-    font-size: 90px;
+    font-size: 80px;
     color: #f03739;
 }
 
 .scroll {
     box-sizing: content-box;
-    height: 60px;
+    height: 50px;
     display: flex;
     margin-left: -3px;
 }
@@ -258,11 +257,11 @@ headd {
 }
 
 .intro {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 #words {
-    font-size: 60px;
+    font-size: 40px;
     display: block;
     padding-left: 20px;
     animation: rotating_words 6s infinite;
@@ -370,7 +369,6 @@ headd {
 
 #about {
     padding: 2% 20%;
-    font-family: 'helvetica', sans-serif;
     background-color: #171722;
 }
 
@@ -397,15 +395,15 @@ headd {
 }
 
 .about-col-2 h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #f03739;
     margin-bottom: 25px;
 }
 
 .about-col-2 p {
-    font-size: 25px;
+    font-size: 20px;
     color: #b1aebb;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 /*-- --------------------Experience-------------------- --*/
@@ -417,7 +415,7 @@ headd {
 }
 
 .experience-col h1 {
-    font-size: 50px;
+    font-size: 40px;
     color: #f03739;
     text-align: center;
     margin-bottom: 25px;
@@ -426,9 +424,25 @@ headd {
 .experience-col p {
     font-size: 20px;
     color: #b1aebb;
-    padding: 15px 0px;
-    line-height: 40px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.experience-col h2 {
+    font-size: 30px;
+    color: #b1aebb;
     margin-bottom: 15px;
+}
+
+.experience-col ul{
+    list-style: square;
+    font-size: 20px;
+    color: #b1aebb;
+    padding: 15px 0px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    list-style-position: outside;
+    margin-left: 20px;
 }
 
 .left_arrow {
@@ -438,6 +452,7 @@ headd {
     color: #b1aebb;
     right: -5%;
     transition: all .5s;
+    z-index: 5000;
 }
 
 .right_arrow {
@@ -509,6 +524,7 @@ social {
 social li {
     height: 50px;
     position: relative;
+    list-style: none;
 }
 
 social li a {
