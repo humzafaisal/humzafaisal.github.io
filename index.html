@@ -141,8 +141,6 @@
                                 Member of the Jesup Scott Honors College
                             </li>
                         </ul>
-                    </div>
-                    <div class="experience-col">
                         <h1>Skills</h1>
                         <h2><b>Hard Skills</b></h2>
                         <p><b>Languages: </b> MATLAB, Java, C++, JavaScript, HTML, CSS.</p>
@@ -163,9 +161,17 @@
         <div id="contact" class="sec">
             <div class="containere">
                 <h1>Contact Me</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="button2">Submit</button>
+                </form>
+                <span id="msg">Thank you for contacting me! I will get back to you ASAP!</span>
             </div>
         </div>
-        <div id="spacer"></div>
+
+        <div class="end"><p>&lt;Made by Humza Faisal. Circa 2023. Last Updated 06/2023&gt;</p></div>
 
         <!-- --------------------Socials-------------------- -->
 
@@ -251,6 +257,7 @@
     ScrollReveal().reveal('.about-col-2', { delay: 200, origin: 'bottom' });
     ScrollReveal().reveal('.rowb');
     ScrollReveal().reveal('.containere');
+    ScrollReveal().reveal('.end', {distance: '0px', delay: 250});
 </script>
 
 <script>
@@ -287,6 +294,26 @@
             document.querySelector("#header").classList.remove("hide");
         }
     })
+</script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxoro9a2r77HM-IRy9zdkyDp693fqMd-MdmMaYmSzhSnMaPIh3TU6_qFxEpRZsXJTHz/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        console.log('Success!', response);
+        document.querySelector("#msg").classList.add("submitted");
+        setTimeout(function(){
+            document.querySelector("#msg").classList.remove("submitted");
+        }, 5000)
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
 </script>
 
 </html>
