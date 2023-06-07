@@ -471,14 +471,14 @@ headd {
 
 .slick-dots {
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .slick-dots li {
     display: inline-block;
-    margin: 0px 10px;
+    margin: 0px 15px;
 }
 
 .slick-dots li button {
@@ -501,6 +501,7 @@ headd {
     padding: 2% 20%;
     font-family: 'helvetica', sans-serif;
     background-color: #171722;
+    min-height: 95vh;
 }
 
 .containere h1 {
@@ -557,6 +558,7 @@ form input, form textarea{
     font-size: 15px;
     padding: 2px;
     color: #171722;
+    min-height: 5vh;
 }
 
 #msg{
