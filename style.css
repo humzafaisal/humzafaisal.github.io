@@ -471,14 +471,14 @@ headd {
 
 .slick-dots {
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .slick-dots li {
     display: inline-block;
-    margin: 0px 10px;
+    margin: 0px 15px;
 }
 
 .slick-dots li button {
@@ -501,6 +501,7 @@ headd {
     padding: 2% 20%;
     font-family: 'helvetica', sans-serif;
     background-color: #171722;
+    min-height: 98vh;
 }
 
 .containere h1 {
@@ -557,6 +558,7 @@ form input, form textarea{
     font-size: 15px;
     padding: 2px;
     color: #171722;
+    min-height: 2vh;
 }
 
 #msg{
@@ -625,4 +627,39 @@ social li a:hover {
 .fa-brands.fa-linkedin:hover p,
 .fa-solid.fa-square-envelope:hover p {
     color: #f03739;
+}
+
+/*-- --------------------Mobile-------------------- --*/
+
+@media screen and (orientation: portrait){
+    .navbar, .button, ::-webkit-scrollbar, .scroll, .words, .intro, social{
+        visibility: hidden;
+        color: transparent;
+    }
+
+    .header-text{
+        margin-left: 5%;
+    }
+    .name{
+        flex-wrap: wrap;
+    }
+
+    #about{
+        padding: 5%;
+    }
+    .about-col-1, .about-col-1 img{
+        visibility: hidden;
+        flex-basis: 0%;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+    }
+
+    #experience{
+        padding: 10%;
+    }
+
+    #contact{
+        padding: 5%;
+    }
 }
