@@ -646,6 +646,7 @@ social li a:hover {
 
     #about{
         padding: 5%;
+        margin-right: 4%;
     }
     .about-col-1, .about-col-1 img{
         visibility: hidden;
@@ -657,9 +658,11 @@ social li a:hover {
 
     #experience{
         padding: 10%;
+        margin-right: 4%;
     }
 
     #contact{
         padding: 5%;
+        margin-right: 4%;
     }
 }
