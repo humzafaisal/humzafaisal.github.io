@@ -11,7 +11,7 @@
 
 ## About The Project
 
-A personal protfolio website I decided to code from scratch to host my future projects and to learn more about using JS, HTML and CSS. The acknowledgments section below contains links to external projects I have used or code that has helped me complete this. I will be using this to display my future projects, achievements, and experience.
+A personal portfolio website I decided to code from scratch to host my future projects and to learn more about using JS, HTML and CSS. The acknowledgments section below contains links to external projects I have used or code that has helped me complete this. I will be using this to display my future projects, achievements, and experience.
 <br/>
 <br/>
 
