@@ -6,7 +6,7 @@
     My portfolio website to showcase my projects, achievements, and experience.
   <br />
   <br />
-  <a href="https://github.com/github_username/repo_name/issues">Report Any Bugs</a>
+  <a href="https://github.com/humzafaisal/humzafaisal.github.io/issues">Report Any Bugs</a>
 </p>
 
 ## About The Project
